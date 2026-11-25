@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Робота з формами</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="card">
+    <h1>Створити акаунт</h1>
+    <p class="subtitle">Приєднайся до нас, гордість району!!!</p>
+    <form id="register-form">
+        <div class="field">
+            <label>Ім'я користувача</label>
+            <input type="text" id="username" autocomplete="username" placeholder="Наприклад, Саша" required>
+            <small id="username-error" class="error"></small>
+        </div>
+        <div class="field">
+            <label>Електронна пошта</label>
+            <input type="email" id="email" autocomplete="email" placeholder="abc@exaple.com" required>
+            <small id="email-error" class="error"></small>
+        </div>
+        <div class="field">
+            <label>Пароль</label>
+            <div class="password-row">
+                <input type="password" id="password" autocomplete="email" placeholder="Мінімум 8 символів" required>
+                <button id="toggle-password" class="toggle" type="button">👁️</button>
+            </div>
+            <small id="password-error" class="error"></small>
+
+            <div class="strength-track">
+                <div id="strength-ban">
+
+                </div>
+                <small id="strength-text">Надійність пароля</small>
+            </div>
+        </div>
+        <div class="field">
+            <label>Повторіть пароль</label>
+            <input type="password" id="confirm-password" placeholder="Повторіть пароль" required>
+            <small id="confirm-error" class="error"></small>
+        </div>
+        <div class="field">
+            <label class="terms"><input id="terms" type="checkbox" required>Погоджуюся з правилами використання особистих даних</label>
+            <small id="terms-error" class="error"></small>
+        </div>
+        <button class="submit" type="submit">Зареєструватися</button>
+        <p id="result"></p>
+
+
+    </form>
+</main>
+
+
+<script src="script.js"></script>
+</body>
+</html>
