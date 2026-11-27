@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    background: linear-gradient(135deg, #1631cf 0%, #28188f 100%);
+    color: #050505;
+}
+.card{
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    border: 1px solid #505068;
+    background-color: #c9d8d8;
+    box-shadow: 0 20px 60px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+h1{
+    margin: 12px 0 6px;
+    font-size: 30px;
+}
+.subtitle{
+    color: #5b8391;
+    margin: 0 0 25px;
+}
+.field{
+    margin-bottom: 25px;
+}
+label{
+    display: block;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+input:not([type="checkbox"]){
+    width: 100%;
+    border: 1px solid #505068;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 16px;
+}
+input:focus-visible, button:focus-visible{
+    outline: 2px solid #5e2020;
+}
+.error{
+    display: block;
+    min-height: 15px;
+    margin-top: 5px;
+    color: red;
+    font-size: 12px;
+}
+.password-row{
+    position: relative;
+}
+.password-row input{
+    padding-right: 50px;
+}
+.toggle{
+    position: relative;
+    right: 3px;
+    top: 2px;
+    width: 40px;
+    height: 35px;
+    border: 0;
+    border-radius: 10px;
+    background: #c69999;
+    cursor: pointer;
+}
+.strength-track{
+    height: 5px;
+    background: #731f1f;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 5px 0;
+}
+#strength-bar{
+    height: 100%;
+    width: 0;
+    transition: width 0.2s;
+}
+#strength-text{
+    color: #5b8391;
+    font-size: 12px;
+}
+.terms{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.submit{
+    width: 100%;
+    padding:10px;
+    border: 0;
+    border-radius: 10px;
+    background: #f6ad24;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+.submit:hover{
+    background: #e74c3c;
+}
+#result{
+    color: #5b8391;
+    font-size: 15px;
+    margin: 5px 0 0;
+}
+#result:empty{
+    display: none;
+}
